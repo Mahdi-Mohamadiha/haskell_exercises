@@ -2,6 +2,11 @@ body {
     font-size: 14pt;
 }
 
+ol hr {
+    display: inline-block;
+    width: 50%;
+}
+
 .list-container {
     margin-bottom: 5px;
 }
