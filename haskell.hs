@@ -1,3 +1,11 @@
+-- Packages
+import Data.List (sort)                 -- Used in 8
+
+
+-- General functions
+doubleMe n = n * 2                      -- Used in 4
+
+
 -- Answer to question 1
 recursiveDivisionList limit = [1 / n | n <- [1 .. limit]]
 
@@ -16,14 +24,12 @@ mergeList (x:xs) (y:ys) =
 
 
 -- Answer to question 4
-doubleMe n = n * 2
-
 luhnAlgo n = 
     let n2 = doubleMe n
     in
-    if n2 > 9
-        then n2 - 9
-        else n2
+        if n2 > 9
+            then n2 - 9
+            else n2
 
 
 -- Answer to question 5
@@ -51,8 +57,6 @@ sum' nestedList =
 
 
 -- Answer to question 8
-import Data.List (sort)
-
 flatten' nestedList = 
     let numberList = concat nestedList
     in sort numberList
